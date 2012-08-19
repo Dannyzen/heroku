@@ -8,7 +8,7 @@ app = Flask(__name__)
 def hello():
     return 'This was way too easy'
 
-@app.route('/<name>')
+@app.route('/hello/<name>')
 def hello(name=None):
     return render_template('hello.html', name=name)
 
